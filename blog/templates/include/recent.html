@@ -1,0 +1,22 @@
+<div class="recent">
+{% block recent %}
+    <h1>Recent Posts</h1>
+	    <ul>
+		        {% for recent in recent_post %}
+				            <li>
+							                <a href="/post/{{ recent.id }}">{{ recent.title }}</a>
+						    </li>   
+				{% endfor %}
+		</ul>
+{% endblock %}
+</div>
+<div class="tag">
+{% block tag %}
+   <h1>Tags</h1>
+   <p>
+  		{% for tag in tag_list %}
+ 	  		<a href="/tag/{{ tag.name }}">{{ tag.name }}</a>
+   		{% endfor %}
+   </p>
+{% endblock %}
+</div>

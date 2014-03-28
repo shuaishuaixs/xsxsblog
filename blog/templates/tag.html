@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+{% block main %}
+	<div class="tag_post_list">
+			<ul>
+				{% for post in post_list %}
+				<li>
+					<div class="pub_time">{{ post.pub_time }}</div>
+					<div class="post_title"><a href="/post/{{ post.id }}">{{ post.title }}</a></div>
+					<div class="content">{{ post.content_markdown|safe }}</div>
+					<div class="more"><a href="/post/{{ post.id }}">Read On</a></div>
+				</li>
+				{% endfor %}
+			</ul>
+	</div>
+{% endblock %}

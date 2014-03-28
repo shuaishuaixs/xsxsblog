@@ -1,0 +1,44 @@
+{% load markup %}
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>{% block title  %}{% endblock %}</title>
+		<link rel="stylesheet" type="text/css" href="/static/css/style.css"/>
+		<link rel="stylesheet" type="text/css" href="/static/css/vim.css"/>
+		<link rel="stylesheet" type="text/css" href="/static/css/pygments.css"/>
+	</head>
+<body>
+	<div class="w1000">
+		<div class="header">
+			<h1><a href="/">xsxsblog.com</a></h1>
+			<div class="title">No pains,No gains </div>
+		</div>
+		<div class="nav">
+			<ul>
+				<li><a href="/">Blog</a></li>		
+				<li><a href="/archive/">Archives</a></li>		
+				<li><a href="/project/">Projects</a></li>		
+				<li><a href="/about/">About</a></li>		
+			</ul>
+		</div>
+		<div class="container">
+				<div class="main">
+					{% block main%}{% endblock  %}
+				</div>
+				<div class="right">
+					{% include 'include/recent.html' %}	
+						<!--<div class="recent">
+							{% block recent  %}{% endblock  %}
+						</div>
+						<div class="tag">
+							{% block tag  %}{% endblock  %}
+						</div>-->
+				</div>
+		</div>
+		<div class="footer">
+			<div class="text">Copyright @copy; 2014 - Powered by xiaoshuai</div>
+		</div>
+	</div>
+</body>
+</html>

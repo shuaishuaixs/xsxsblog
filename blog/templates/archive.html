@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+{% block main %}
+	<div class="archive">
+			<h1>Blog Archives</h1>
+			<ul>
+				{% for post in post_list %}
+					<li>
+						<span class="time">{{ post.pub_time|date:'Y年m月d日' }}</span>
+						<span class="title"><a href="/post/{{ post.id }}">{{ post.title }}</a></span>
+					</li>
+				{% endfor %}
+			</ul>
+	</div>
+{% endblock %}

@@ -1,0 +1,115 @@
+@charset "utf-8";
+/** 清除内外边距 **/
+body, h1, h2, h3, h4, h5, h6, hr, p,
+blockquote, /* structural elements 结构元素 */
+dl, dt, dd, ul, ol, li, /* list elements 列表元素 */
+pre, /* text formatting elements 文本格式元素 */
+form, fieldset, legend, /* button, input, textarea, /* form elements 表单元素 */
+/*th, td,  table elements 表格元素 */
+img/* img elements 图片元素 */{border:medium none;margin:0;padding:0;}
+/** 设置默认字体 **/
+body,button, input, select, textarea {font: 12px/1.5 Arial,'宋体',tahoma, Srial, helvetica, sans-serif;}
+input[type="button"],input[type="reset"],input[type="submit"]{cursor:pointer;padding:0;margin:0;}
+/*h1, h2, h3, h4, h5, h6 { font-size: 100%; }*/
+em{font-style:normal;}
+/** 重置列表元素 **/
+/*ul, ol{list-style: none;}*/
+ul{list-style: none;}
+ol{margin-left:25px;}
+/** 重置超链接元素 **/
+a {cursor:pointer; text-decoration: none; outline:none;}
+a:hover { text-decoration: underline;}
+/** 重置图片元素 **/
+img{ border:0px;vertical-align:bottom;}
+/** 重置表格元素 **/
+/*table { border-collapse: collapse; border-spacing: 0;}*/
+
+/** 列表元素 **/
+ol.disc{padding-left:20px;list-style:disc outside;}
+ol.square{padding-left:20px;list-style:square outside;}
+ol.decimal{padding-left:25px;list-style:decimal outside;}
+ol.lower{padding-left:25px;list-style:lower-alpha outside;}
+ol.upper{padding-left:25px;list-style:upper-alpha outside;}
+
+/** 位置元素 **/
+.fl{float:left;}
+.fr{float:right;}
+.cb{clear:both;}
+.cp{cursor:pointer;}
+.tal{text-align:left;}
+.tar{text-align:right;}
+.tac{text-align:center;}
+/** 显示隐藏 **/
+.dn{display:none;}
+.db{display:block;}
+/** 边距元素 **/
+.p5{padding:5px;}
+.pt5{padding-top:5px;}
+.pb5{padding-bottom:5px;}
+.pl5{padding-left:5px;}
+.pr5{padding-right:5px;}
+.p10{padding:10px;}
+.pt10{padding-top:10px;}
+.pb10{padding-bottom:10px;}
+.pl10{padding-left:10px;}
+.pr10{padding-right:10px;}
+.p15{padding:15px;}
+.pt15{padding-top:15px;}
+.pb15{padding-bottom:15px;}
+.pl15{padding-left:15px;}
+.pr15{padding-right:15px;}
+.p20{padding:20px;}
+.pt20{padding-top:20px;}
+.pb20{padding-bottom:20px;}
+.pl20{padding-left:20px;}
+.pr20{padding-right:20px;}
+.mac{margin:auto;}
+.m5{margin:5px;}
+.mt5{margin-top:5px;}
+.mb5{margin-bottom:5px;}
+.ml5{margin-left:5px;}
+.mr5{margin-right:5px;}
+.m10{margin:10px;}
+.mt10{margin-top:10px;}
+.mb10{margin-bottom:10px;}
+.ml10{margin-left:10px;}
+.mr10{margin-right:10px;}
+.m15{margin:15px;}
+.mt15{margin-top:15px;}
+.mb15{margin-bottom:15px;}
+.ml15{margin-left:15px;}
+.mr15{margin-right:15px;}
+.m20{margin:20px;}
+.mt20{margin-top:20px;}
+.mb20{margin-bottom:20px;}
+.ml20{margin-left:20px;}
+.mr20{margin-right:20px;}
+/** 字体元素 **/
+.fb{font-weight:bold;}
+.fwn{font-weight:normal;}
+.fs10{font-size:10px;}
+.fs12{font-size:12px;}
+.fs13{font-size:13px;}
+.fs14{font-size:14px;}
+.fs15{font-size:15px;}
+.fs16{font-size:16px;}
+.fs18{font-size:18px;}
+.fs20{font-size:20px;}
+.fs22{font-size:22px;}
+/** 行高元素 **/
+.lh16{line-height:16px;}
+.lh18{line-height:18px;}
+.lh20{line-height:20px;}
+.lh22{line-height:22px;}
+.lh24{line-height:24px;}
+.lh26{line-height:26px;}
+/** 颜色元素 **/
+.fc0{color:#000;}
+.fc3{color:#333;}
+.fc6{color:#666;}
+.fc9{color:#999;}
+.fcf{color:#FFF;}
+.bcf{background-color:#FFF;}
+.bc0{background-color:#000;}
+.bcf0{background-color:#F00;}
+.brown{color:#D15B43;}

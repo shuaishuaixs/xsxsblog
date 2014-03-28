@@ -1,0 +1,38 @@
+{% extends 'base.html'  %}
+{% block title  %}the home page {% endblock  %}
+{% block main  %}
+	<div class="post_list">
+	<ul>
+	{% for post in post_list %}
+		<li>
+			<div class="pub_time">{{ post.pub_time|date:'Y/m/d H:i:s' }}</div>
+			<div class="post_title">
+				<a href="/post/{{ post.id }}">{{ post.title }}</a>
+			</div>
+			<div class="post_content">{{ post.content_markdown|safe }}</div>
+			<div class="more"><a href="/post/{{ post.id }}">Read On</a></div>
+		</li>
+	{% endfor %}
+	</ul>
+	</div>
+	<div class="more_blogs"><a href="/archive">more blogs</a></div>
+{% endblock %}
+
+<!--
+	<h1>Recent Posts</h1>
+	<ul>
+		{% for recent in recent_post %}
+			<li>
+				<a href="##">{{ recent.title }}</a>
+			</li>	
+		{% endfor %}
+	</ul>
+
+	<h1>Tags</h1>
+	<p>
+		{% for tag in tag_list %}
+			<a href="/tag/{{ tag.name }}">{{ tag.name }}</a>
+		{% endfor %}
+	</p>
+-->
+{% include 'include/test.html' %}

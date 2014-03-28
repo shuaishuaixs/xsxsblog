@@ -1,0 +1,41 @@
+{% extends 'base.html' %}
+{% block main %}
+	<div class="post_detail">
+			<div class="pub_time">{{ post.pub_time|date:'Y/m/d H:i:s'}}</div>
+			<div class="post_title">{{ post.title }}</div>
+			<div class="content">{{ post.content_markdown|safe }}</div>
+
+			<div class="share">
+					<div style="display:inline-block;">分享到：</div>
+					<!-- JiaThis Button BEGIN -->
+					<div class="jiathis_style_24x24">
+						<a class="jiathis_button_qzone"></a>
+						<a class="jiathis_button_tsina"></a>
+						<a class="jiathis_button_tqq"></a>
+						<a class="jiathis_button_weixin"></a>
+						<a class="jiathis_button_renren"></a>
+						<a href="http://www.jiathis.com/share" class="jiathis jiathis_txt jtico jtico_jiathis" target="_blank"></a>
+						<a class="jiathis_counter_style"></a>
+					</div>
+					<script type="text/javascript" src="http://v3.jiathis.com/code/jia.js?uid=1394033327534610" charset="utf-8"></script>
+					<!-- JiaThis Button END -->
+			</div>
+
+
+			<!-- Duoshuo Comment BEGIN -->
+				<div class="ds-thread"></div>
+				<script type="text/javascript">
+				var duoshuoQuery = {short_name:"localhost"};
+					(function() {
+							var ds = document.createElement('script');
+							ds.type = 'text/javascript';ds.async = true;
+							ds.src = 'http://static.duoshuo.com/embed.js';
+							ds.charset = 'UTF-8';
+							(document.getElementsByTagName('head')[0] 
+																	|| document.getElementsByTagName('body')[0]).appendChild(ds);
+							})();
+				</script>
+			<!-- Duoshuo Comment END -->
+
+			</div>
+{% endblock %}
