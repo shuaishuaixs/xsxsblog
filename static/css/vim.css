@@ -1,9 +1,9 @@
 .codehilite{margin-bottom:15px;}
 .codehilite pre{background:#073642;padding:5px;border-radius:4px;}
-code{border:1px solid #aaa;border-radius:2px;padding:0 3px;margin:0 2px;color:#bbb;}
+code{border:1px solid #aaa;border-radius:2px;padding:0 3px;margin:0 2px;}
 .codehilite .hll { background-color: #222222 }
 .codehilite .c { color: #000080 } /* Comment */
-.codehilite .err { color: #cccccc; border: 1px solid #FF0000 } /* Error */
+.codehilite .err { color: #cccccc;/* border: 1px solid #FF0000 */} /* Error */
 .codehilite .g { color: #cccccc } /* Generic */
 .codehilite .k { color: #cdcd00 } /* Keyword */
 .codehilite .l { color: #cccccc } /* Literal */
@@ -71,3 +71,7 @@ code{border:1px solid #aaa;border-radius:2px;padding:0 3px;margin:0 2px;color:#b
 .codehilite .vi { color: #00cdcd } /* Name.Variable.Instance */
 .codehilite .il { color: #cd00cd } /* Literal.Number.Integer.Long */
 
+/*add some style*/
+p{padding-bottom:20px;}
+blockquote{border-left:10px solid #d6dbdf;background:#f0f1ee;padding:10px 15px;margin-bottom:20px;}
+blockquote p{padding:0;line-height:18px;}
