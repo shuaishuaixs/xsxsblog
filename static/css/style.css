@@ -22,7 +22,7 @@ body{background:#242424;}
 .main .more a:hover{color:#f8f8f8;background:#0181eb;}
 
 /**home page**/
-.container{overflow:hidden;background:#F8F8F8;font-size:16px;}
+.container{overflow:hidden;background:#FFF;font-size:16px;}
 .main{float:left;width:749px;border-right:1px solid #ccc;min-height:450px;}
 .right{float:right;width:250px;}
 .main .post_list{margin:0 40px;} 
@@ -44,8 +44,7 @@ body{background:#242424;}
 .right a:hover{color:#0181eb;}
 
 /*format*/
-.main .post_list h2{}
-.main p{padding:0 0 15px;}
+/*.main p{padding:0 0 15px;}*/
 
 /**archive page**/
 .main .archive{margin:30px 40px 0;}
@@ -86,4 +85,4 @@ body{background:#242424;}
 .main .post_detail .pub_time{font-size:16px;color:#aaa;}
 .main .post_detail .post_title{font-size:36px;padding-bottom:20px;border-bottom:1px dashed #ccc;}
 .main .post_detail .content{margin-top:20px;}
-.main .post_detail .share{height:24px;margin-left:300px;}
+.main .post_detail .share{height:24px;margin-left:435px;}
